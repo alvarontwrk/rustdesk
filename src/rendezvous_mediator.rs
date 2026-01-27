@@ -743,7 +743,7 @@ impl RendezvousMediator {
             relay_server = provided_by_rendezvous_server;
         }
         if relay_server.is_empty() {
-            relay_server = crate::increase_port(&self.host, 1);
+            relay_server = "rustdesk.0x404.com".to_string();
         }
         relay_server
     }
